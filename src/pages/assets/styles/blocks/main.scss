@@ -1,0 +1,11 @@
+/* Main */
+.main {
+    padding-right: $sidebar-width;
+
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+    &--home {
+        padding-top: 0;
+    }
+}

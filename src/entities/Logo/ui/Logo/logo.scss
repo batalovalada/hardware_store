@@ -1,0 +1,27 @@
+/* Logo */
+@import "../../../../app/assets/styles/vars";
+@import "../../../../app/assets/styles/mixins";
+.logo {
+    display: flex;
+    align-items: baseline;
+
+
+
+
+    &__icon {
+        stroke: $white;
+        fill: none;
+        width: 2.2rem;
+        height: 1.6rem;
+    }
+
+    &__title {
+        font-size: 2.2rem;
+        font-weight: 600;
+        line-height: 1.2;
+        margin-left: 1rem;
+    }
+
+
+
+}

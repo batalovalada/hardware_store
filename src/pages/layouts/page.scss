@@ -1,0 +1,9 @@
+/* Page */
+@import "../../app/assets/styles/vars";
+@import "../../app/assets/styles/mixins";
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+}

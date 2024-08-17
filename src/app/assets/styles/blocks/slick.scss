@@ -1,0 +1,62 @@
+/* Slick */
+
+.slick-arrow {
+    width: auto;
+    height: auto;
+    padding: 0.5rem;
+    z-index: 100;
+
+    &:hover {
+
+        &.slick-prev::before,
+        &.slick-next::before {
+            border-color: $secondary;
+        }
+    }
+}
+
+
+.slick-prev::before,
+.slick-next::before {
+    content: "";
+    display: block;
+    opacity: 1;
+    font-size: 0;
+    color: transparent;
+    height: 2rem;
+    width: 2rem;
+    line-height: 0;
+    border-top: 3px solid $gray;
+    border-left: 3px solid $gray;
+    transition: border .2s ease;
+}
+
+.slick-prev::before {
+    transform: rotate(-45deg);
+}
+
+.slick-next::before {
+    transform: rotate(135deg);
+}
+
+.slick-section {
+    .slick-track {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        @include media($tablet-br-1) {
+            display: block;
+
+        }
+    }
+
+    .slick-prev {
+        left: -2.5rem;
+    }
+
+    .slick-next {
+        right: -2.5rem;
+    }
+}
+

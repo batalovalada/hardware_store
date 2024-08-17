@@ -1,0 +1,13 @@
+export {AdminPage} from "./components/AdminPage";
+export { BasketPage } from "./components/BasketPage";
+export { FavoritesPage } from "./components/FavoritesPage";
+export { DevicePage } from "./components/DevicePage";
+export { LoginPage } from "./components/LoginPage";
+export { MainPage } from "./components/MainPage";
+export { SignUpPage } from "./components/SignUpPage";
+export { ResetPage } from "./components/ResetPage";
+export { NotFoundPage } from "./components/NotFoundPage";
+export { ShopsPage } from "./components/ShopsPage";
+export { SalesPage } from "./components/SalesPage";
+export {ProtectedRoute} from "./ProtectedRoute";
+export {Layout} from "./layouts/Layout";

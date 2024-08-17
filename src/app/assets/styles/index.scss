@@ -1,0 +1,48 @@
+@import "vars";
+@import "mixins";
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+
+    font-family: $font-text;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: $black;
+
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: $font-text;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+p {
+    margin: 1rem 0;
+}
+
+/* Blocks */
+@import "blocks/slick";
+@import "blocks/error";

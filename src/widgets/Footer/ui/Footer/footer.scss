@@ -1,0 +1,64 @@
+/* Footer */
+@import "../../../../app/assets/styles/vars";
+@import "../../../../app/assets/styles/mixins";
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0 3rem;
+    background-color: $black;
+
+    &__main {
+    display: flex;
+    justify-content: space-between;
+    }
+    
+    &__item {
+        width: 33.33%;
+        padding: 0 1rem;
+    }
+
+    &__title {
+        line-height: 1.3;
+        font-weight: 500;
+        font-size: 1.8rem;
+        margin-bottom: 3rem;
+        color: $light-blue;
+        position: relative;
+        &::after {
+            content: "";
+            height: 0.2rem;
+            width: 100%;
+            background-color: $gray;
+            position: absolute;
+            bottom: -2rem;
+            left: 0;
+            z-index: 1;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__link {
+        line-height: 1.3;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: $gray;
+        transition: color .2s;
+        &:hover {
+            color: $orange;
+        }
+    }
+
+    &__c {
+        line-height: 1.1;
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: $gray;
+        margin: 3rem auto 0;
+    }
+}
