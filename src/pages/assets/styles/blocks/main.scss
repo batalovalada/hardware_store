@@ -1,4 +1,6 @@
 /* Main */
+@import "../../../../app/assets/styles/vars";
+@import "../../../../app/assets/styles/mixins";
 .main {
     padding-right: $sidebar-width;
 
@@ -7,5 +9,13 @@
 
     &--home {
         padding-top: 0;
+    }
+    @include media($tablet-br-1) {
+        padding-right: 0;
+    }
+
+    @include media($tablet-br-2) {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
     }
 }

@@ -6,6 +6,11 @@
     display: flex;
     justify-content: center;
 
+    @include media($container-br) {
+        flex-direction: column;
+        align-items: center;
+    }
+
     &__slider {
         width: 100%;
         max-width: 73rem;
@@ -17,6 +22,14 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
+
+        @include media($container-br) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include media($tablet-br-1) {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
 
     &__item {
@@ -60,6 +73,11 @@
             max-width: none;
             margin-right: 1.5rem;
             text-align: center;
+
+            @include media($container-br) {
+                margin-bottom: 2rem;
+                margin-right: 0;
+            }
 
         }
 

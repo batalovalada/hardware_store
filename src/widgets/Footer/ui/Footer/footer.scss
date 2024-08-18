@@ -3,19 +3,34 @@
 @import "../../../../app/assets/styles/mixins";
 
 .footer {
+    margin-top: auto;
     display: flex;
     flex-direction: column;
     padding: 2rem 0 3rem;
     background-color: $black;
+    padding-right: $sidebar-width;
+    @include media($tablet-br-1) {
+        padding-right: 0;
+    }
 
     &__main {
     display: flex;
     justify-content: space-between;
+
+    @include media($tablet-br-1) {
+        flex-direction: column;
+    }
     }
     
     &__item {
         width: 33.33%;
         padding: 0 1rem;
+
+        @include media($container-br) {
+            width: 100%;
+            padding: 0 0 0 2rem;
+            margin-bottom: 2rem;
+        }
     }
 
     &__title {

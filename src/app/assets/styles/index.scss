@@ -14,6 +14,11 @@ body {
     line-height: 1.5;
     color: $black;
 
+    @include media($tablet-br-1) {
+        &.show-nav {
+            overflow: hidden;
+        }
+    }
 }
 
 

@@ -1,4 +1,6 @@
 /* Form */
+@import "../../../../app/assets/styles/vars";
+@import "../../../../app/assets/styles/mixins";
 .form {
     &__labels {
         position: absolute;

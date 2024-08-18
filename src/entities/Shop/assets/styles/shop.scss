@@ -8,11 +8,20 @@
     display: flex;
     align-items: start;
     justify-content: center;
+
+    @include media($container-br) {
+        flex-direction: column;
+        align-items: center;
+    }
     
 
     &__map {
         height: 60rem;
         width: 60%;
+
+        @include media($container-br) {
+            width: 100%;
+        }
     }
 
     &__list {
@@ -21,6 +30,16 @@
         display: flex;
         flex-direction: column;
         gap: 2rem;
+
+        @include media($container-br) {
+            padding: 0 2rem 0;
+            margin-top: 2rem;
+            width: 60%;
+        }
+
+        @include media($tablet-br-1) {
+            width: 100%;
+        }
     }
 
     &__card {

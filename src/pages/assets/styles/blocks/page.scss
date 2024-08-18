@@ -1,0 +1,7 @@
+@import "../../../../app/assets/styles/vars";
+@import "../../../../app/assets/styles/mixins";
+
+.page {
+    display: flex;
+    flex-direction: column;
+}

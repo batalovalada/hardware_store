@@ -20,6 +20,9 @@
         font-weight: 600;
         line-height: 1.2;
         margin-left: 1rem;
+        @include media($tablet-br-2) {
+            font-size: 2rem;
+        }
     }
 
 
