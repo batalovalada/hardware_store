@@ -7,7 +7,7 @@ export const Device: React.FC = () => {
         <div className="device">
             <div className="container">
                 <div className="device__main">
-                    <DeviceNav />
+                    <DeviceNav/>
                     <DeviceList />
                 </div>
             </div>

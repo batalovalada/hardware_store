@@ -3,11 +3,13 @@ import { useActions } from "../../../../shared/lib/hooks/useActions";
 import { useTypedSelector } from "../../../../shared/lib/hooks/useTypedSelector";
 import Loader from "../../../../shared/ui/loader/Loader";
 import { DeviceCard } from "../DeviceCard";
-import { getPageCount, getPagesArray } from "../../lib/utils/pages";
+import { getPagesArray } from "../../lib/utils/pages";
 import Pagination from "../../../../shared/ui/pagination/Pagination";
 import { usePosts } from "../../../../shared/lib/hooks/usePosts";
 import { IFilter } from "../../../../shared/types/IFilter";
 import { Filter } from "../../../Filter";
+import { DeviceBrand } from "../DeviceBrand";
+
 
 export const DeviceList = () => {
     const {devices, loading, error, page, limit} = useTypedSelector(state => state.device)
@@ -54,6 +56,7 @@ export const DeviceList = () => {
                     { value: 'evaluationDown', name: 'По рейтингу (по убыванию)' }
                 ]} />
             </div>
+            <DeviceBrand/>
             <div className="device__list-main">
                 {sortedSearchedPosts.map(device =>
                     <DeviceCard device={device} key={device.id} />

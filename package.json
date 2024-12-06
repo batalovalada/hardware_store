@@ -14,7 +14,7 @@
     "@types/react-router-dom": "^5.3.3",
     "@types/react-slick": "^0.23.10",
     "@types/three": "^0.155.0",
-    "axios": "^1.4.0",
+    "axios": "^1.7.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.1.2",

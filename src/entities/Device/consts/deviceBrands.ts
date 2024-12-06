@@ -1,4 +1,4 @@
-export const navBtns = [
+export const brandsBtns = [
     {
         group: '#',
         title: 'Телефоны'
